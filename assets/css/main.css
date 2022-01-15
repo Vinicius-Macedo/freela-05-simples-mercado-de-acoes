@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 16px;
+  background-color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grafico-container, .grafico-container-adicionar {
+  border-radius: 8px;
+  margin: 24px;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  background-color: #333;
+}
+
+.grafico-container .right, .grafico-container-adicionar .right {
+  margin-left: auto;
+}
+
+.grafico-container > *, .grafico-container-adicionar > * {
+  color: #fff;
+}
+
+.grafico-container .topo, .grafico-container .bottom, .grafico-container-adicionar .topo, .grafico-container-adicionar .bottom {
+  gap: 12px;
+  z-index: 3;
+  padding: 20px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grafico-container .topo, .grafico-container-adicionar .topo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  top: 0;
+}
+
+.grafico-container .topo .main-p, .grafico-container-adicionar .topo .main-p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.grafico-container .topo .status, .grafico-container-adicionar .topo .status {
+  background: #00CB66;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.grafico-container .bottom, .grafico-container-adicionar .bottom {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  left: 0;
+  bottom: 0;
+}
+
+.grafico-container .bottom i, .grafico-container-adicionar .bottom i {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.grafico-container .bottom p, .grafico-container-adicionar .bottom p {
+  font-size: 12px;
+}
+
+.grafico-container-adicionar .plus {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: #4180ac;
+  cursor: pointer;
+}
+
+.grafico-container-adicionar .plus i {
+  font-size: 48px;
+}
+
+.grafico-container-adicionar .plus p {
+  margin-top: 8px;
+  font-size: 24px;
+}
+/*# sourceMappingURL=main.css.map */
